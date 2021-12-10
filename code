@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+   int i = 1, j = 2, k = 1, s = 2, buf;
+   int arr[]={6, 4, 1, 5, 3, 7, 2};
+   int N = sizeof(arr)/sizeof(int);
+   int arr_2[] = {11, 3, 44, 7, 20, 99, 1, 2, 3};
+   int N_2 = sizeof(arr_2)/sizeof(int);
+   for (k; k < N_2; k = s++);
+   {
+       if (arr_2[k - 1] > arr_2[k]) 
+       {
+           buf = arr_2[k];
+           arr_2[k] = arr_2[k - 1];
+           arr_2[k - 1] = buf;
+           k--;
+           if (k > 0)
+           {
+               k = k;
+           }
+           
+       }
+   }   
+   printf("\n\n");
+   for (i = 0; i < N_2; i++)
+   printf("%i ", arr_2[i]);
+   while (i < N) 
+   {
+       if (arr[i - 1] > [i]) 
+        {
+            buf = arr[i];
+            arr[i] = arr[i - 1];
+            arr[i - 1] = buf;
+            i--;
+            if (i > 0) continue;
+
+        }
+           i = j++;
+   }
+ 
+     for (i = 0; i < N; i++)
+     printf("%i ", arr[i]);
+
+}
